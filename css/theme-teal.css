@@ -1,0 +1,323 @@
+/* ==========================================================================
+   VARIATION 2: MODERN OCEAN TEAL & CYAN (HIGH CONTRAST & DYNAMISM)
+   Designed for Alexander Jankowski Website
+   ========================================================================== */
+
+:root {
+  --theme-accent: #00B4D8;
+  --theme-accent-bright: #38BDF8;
+  --theme-accent-dark: #0284C7;
+  --theme-accent-hover: #0096C7;
+  --theme-accent-glow: rgba(0, 180, 216, 0.25);
+  --theme-section-bg: #071E26;
+}
+
+/* Base utility classes */
+.bc1 {
+  color: #00B4D8 !important;
+}
+
+.bg-1 {
+  background-color: #00B4D8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   HERO & INTRO SECTION
+   -------------------------------------------------------------------------- */
+
+/* Scroll-down indicator arrow */
+.next-section::before {
+  background-image: url("../images/arrow-down-teal.svg") !important;
+}
+
+/* Intro headline highlighted links */
+.intro-section h2 a,
+.intro h2 a {
+  color: #00B4D8 !important;
+  transition: color 0.25s ease !important;
+}
+
+.intro-section h2 a:hover,
+.intro h2 a:hover {
+  color: #38BDF8 !important;
+}
+
+/* Hero section button: Clean link with arrow, NO square box or border */
+.btn,
+.intro-section .btn {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #00B4D8 !important;
+  outline: none !important;
+  border-radius: 0 !important;
+  padding: 0 30px 0 0 !important;
+  height: 40px !important;
+  line-height: 42px !important;
+}
+
+.btn:hover,
+.intro-section .btn:hover {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #FFFFFF !important;
+}
+
+.btn::before,
+.intro-section .btn::before {
+  background-image: url("../images/arrow-right-teal.svg") !important;
+}
+
+.btn:hover::before,
+.intro-section .btn:hover::before {
+  right: -20px !important;
+  opacity: 0 !important;
+}
+
+.btn:hover::after,
+.intro-section .btn:hover::after {
+  right: 0px !important;
+  opacity: 1 !important;
+}
+
+/* Secondary Button Style */
+.btn2 {
+  border: solid 2px #00B4D8 !important;
+  color: #38BDF8 !important;
+  background-color: transparent !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn2:hover {
+  background-color: #00B4D8 !important;
+  color: #000000 !important;
+  border-color: #00B4D8 !important;
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.45) !important;
+}
+
+/* --------------------------------------------------------------------------
+   KEY BLOCKS SECTION
+   -------------------------------------------------------------------------- */
+.swiper-key-blocks .swiper-slide:hover h2 {
+  color: #00B4D8 !important;
+}
+
+.swiper-key-blocks .swiper-slide img.arrow.arrow-bc1 {
+  content: url("../images/arrow-right-teal.svg") !important;
+}
+
+/* --------------------------------------------------------------------------
+   TIMELINE SECTION
+   -------------------------------------------------------------------------- */
+.timeline .tl-block h2,
+.timeline-mob .swiper-slide h2,
+.timeline-wrap-mob .timeline-mob .timeline-item-mob h2 {
+  color: #00B4D8 !important;
+}
+
+.timeline .tl-block .tl-half.tl-half-text h4.icon-loc,
+.timeline-wrap-mob .timeline-mob h4.icon-loc {
+  background-image: url("../images/timeline/icon-loc-teal.svg") !important;
+}
+
+.timeline-line {
+  background-color: rgba(0, 180, 216, 0.3) !important;
+}
+
+.timeline-line::after {
+  background-color: #00B4D8 !important;
+}
+
+/* Swiper Controls */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #00B4D8 !important;
+  color: #000000 !important;
+}
+
+.swiper-button-next {
+  background-image: url("../images/icon-chev-right-wo.svg") !important;
+}
+
+.swiper-button-prev {
+  background-image: url("../images/icon-chev-left-wo.svg") !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #38BDF8 !important;
+  color: #000000 !important;
+  background-image: url("../images/icon-chev-right-wo.svg") !important;
+}
+
+/* --------------------------------------------------------------------------
+   NEWS & INSIGHTS SECTION
+   -------------------------------------------------------------------------- */
+.news-block:hover .news-thumb::before {
+  background-color: #00B4D8 !important;
+  opacity: 0.85 !important;
+}
+
+.news-block .news-thumb::after {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #00B4D8 !important;
+  background-image: url("../images/arrow-right-teal.svg") !important;
+}
+
+.news-block:hover h3 {
+  color: #00B4D8 !important;
+}
+
+.news-block .news-tags li {
+  border-color: #00B4D8 !important;
+  color: #0284C7 !important;
+}
+
+.news-title-wrap {
+  background-color: #00B4D8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   CONNECT & CONTACT SECTION
+   -------------------------------------------------------------------------- */
+.bg-bc1,
+.newsletter.bg-bc1 {
+  background: linear-gradient(145deg, #071E26 0%, #0D3B4C 60%, #000000 100%) !important;
+  color: #FFFFFF !important;
+}
+
+.newsletter.bg-bc1 .connect-headline {
+  color: #FFFFFF !important;
+}
+
+.newsletter.bg-bc1 .connect-subtext {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Primary Connect Button */
+.btn-connect-primary {
+  background-color: #00B4D8 !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 20px rgba(0, 180, 216, 0.4) !important;
+}
+
+.btn-connect-primary:hover {
+  background-color: #38BDF8 !important;
+  color: #000000 !important;
+  box-shadow: 0 6px 28px rgba(0, 180, 216, 0.6) !important;
+  transform: translateY(-2px);
+}
+
+.btn-connect-outline:hover {
+  color: #00B4D8 !important;
+}
+
+/* Contact Card & Form Elements */
+.contact-card {
+  border-color: rgba(0, 180, 216, 0.35) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(0, 180, 216, 0.15) !important;
+}
+
+.contact-card-badge {
+  color: #38BDF8 !important;
+  background: rgba(0, 180, 216, 0.15) !important;
+  border: 1px solid rgba(0, 180, 216, 0.4) !important;
+}
+
+.contact-label .required {
+  color: #38BDF8 !important;
+}
+
+.contact-input:focus {
+  border-color: #00B4D8 !important;
+  box-shadow: 0 0 0 3px rgba(0, 180, 216, 0.25) !important;
+}
+
+.contact-checkbox input[type="checkbox"],
+.consent-checkbox {
+  accent-color: #00B4D8 !important;
+}
+
+.btn-submit-contact,
+.btn-contact-submit {
+  background: linear-gradient(135deg, #00B4D8 0%, #0284C7 100%) !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 20px rgba(0, 180, 216, 0.45) !important;
+}
+
+.btn-submit-contact:hover,
+.btn-contact-submit:hover {
+  background: linear-gradient(135deg, #38BDF8 0%, #00B4D8 100%) !important;
+  color: #000000 !important;
+  box-shadow: 0 6px 28px rgba(0, 180, 216, 0.65) !important;
+}
+
+.feedback-icon,
+.feedback-icon-wrap {
+  background: rgba(0, 180, 216, 0.15) !important;
+  border-color: #00B4D8 !important;
+}
+
+.feedback-icon svg,
+.feedback-icon-wrap svg {
+  stroke: #38BDF8 !important;
+}
+
+.feedback-title,
+.contact-feedback-box h4 {
+  color: #38BDF8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   FOOTER & NAVIGATION
+   -------------------------------------------------------------------------- */
+.footer-quicklinks a:hover {
+  color: #38BDF8 !important;
+}
+
+.social-item a:hover {
+  border-color: #00B4D8 !important;
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.2) !important;
+}
+
+.social-item a:hover .social-icon {
+  color: #38BDF8 !important;
+}
+
+.footer-social ul li a:hover::before,
+.social-link::before {
+  background-color: #00B4D8 !important;
+}
+
+.footer-brand-title {
+  color: #FFFFFF !important;
+}
+
+.back-btn {
+  color: #00B4D8 !important;
+}
+
+.back-btn:hover {
+  color: #38BDF8 !important;
+}
+
+/* Fullscreen Burger Menu */
+.menu-wrap {
+  background-color: #071E26 !important;
+}
+
+.menu-wrap ul li a {
+  color: #FFFFFF !important;
+}
+
+.menu-wrap ul li a:hover {
+  color: #38BDF8 !important;
+}
+
+.menu-wrap ul li.active a::before {
+  background-color: #00B4D8 !important;
+}

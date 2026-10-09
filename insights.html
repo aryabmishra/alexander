@@ -1,0 +1,1007 @@
+<!doctype html>
+<html lang="de" data-bs-theme="auto">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Fonts-->
+	<link rel="stylesheet" href="https://use.typekit.net/erm4jbe.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/hamburgers.min.css" rel="stylesheet">
+	<!--Main Styles-->
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/theme-navy.css" rel="stylesheet">
+	<!--AOS Animations-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!--Meta-->
+	<title>Insights &amp; Gedanken | Alexander Jankowski - Vertrieb, Kommunikation &amp; Haltung</title>
+	<meta name="description" content="Praxisnahe Gedanken, Strategien und Lektionen zu Vertrieb, Kommunikation, Vertrauen und mentaler Disziplin von Alexander Jankowski." />
+	<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+	<meta name="author" content="Alexander Jankowski">
+	<link rel="canonical" href="http://localhost:5175/insights.html" />
+	<meta property="og:locale" content="de_DE" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Insights &amp; Gedanken | Alexander Jankowski" />
+	<meta property="og:description" content="Praxisnahe Gedanken zu Vertrieb, Kommunikation, Vertrauen und mentaler Disziplin." />
+	<meta property="og:site_name" content="Alexander Jankowski" />
+
+	<!--Icons-->
+	<link rel="icon" href="images/cropped-sb-favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" href="images/cropped-sb-favicon-192x192.png" sizes="192x192" />
+	<link rel="apple-touch-icon" href="images/cropped-sb-favicon-180x180.png" />
+	<meta name="msapplication-TileImage" content="images/cropped-sb-favicon-180x180.png" />
+
+	<style>
+		/* Custom Insights Page Specific Enhancements */
+		body {
+			background-color: #000000;
+			color: #ffffff;
+			overflow-x: hidden;
+		}
+
+		.insights-hero {
+			position: relative;
+			padding-top: 150px;
+			padding-bottom: 70px;
+			background: radial-gradient(circle at 50% 10%, rgba(59, 130, 246, 0.12) 0%, rgba(0, 0, 0, 0) 60%), #000000;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		}
+
+		@media (min-width: 992px) {
+			.insights-hero {
+				padding-top: 180px;
+				padding-bottom: 90px;
+			}
+		}
+
+		.hero-badge {
+			display: inline-block;
+			font-family: 'zuume', sans-serif;
+			font-size: 13px;
+			font-weight: 700;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: #60A5FA;
+			background-color: rgba(59, 130, 246, 0.15);
+			border: 1px solid #3B82F6;
+			padding: 6px 16px;
+			border-radius: 50px;
+			margin-bottom: 22px;
+		}
+
+		.insights-title {
+			font-family: 'zuume', sans-serif;
+			font-weight: 700;
+			font-size: 50px;
+			line-height: 0.95;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: #ffffff;
+			margin-bottom: 20px;
+		}
+
+		@media (min-width: 768px) {
+			.insights-title {
+				font-size: 78px;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			.insights-title {
+				font-size: 104px;
+			}
+		}
+
+		.insights-subtitle {
+			font-family: paralucent, sans-serif;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 1.6;
+			color: rgba(255, 255, 255, 0.75);
+			max-width: 740px;
+			margin: 0 auto 35px auto;
+		}
+
+		@media (min-width: 768px) {
+			.insights-subtitle {
+				font-size: 21px;
+			}
+		}
+
+		/* Filter Pills */
+		.filter-wrap {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 10px;
+			margin-top: 25px;
+		}
+
+		.filter-pill {
+			font-family: 'zuume', sans-serif;
+			font-size: 13px;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			background: transparent;
+			color: #ffffff;
+			border: 1px solid rgba(255, 255, 255, 0.25);
+			padding: 8px 20px;
+			border-radius: 30px;
+			cursor: pointer;
+			transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+		}
+
+		.filter-pill:hover,
+		.filter-pill.active {
+			background-color: #60A5FA;
+			color: #000000;
+			border-color: #60A5FA;
+			font-weight: 700;
+			transform: translateY(-2px);
+			box-shadow: 0 4px 18px rgba(59, 130, 246, 0.35);
+		}
+
+		/* Featured Post Spotlight */
+		.featured-card-wrap {
+			background: #0d0d0d;
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			border-radius: 24px;
+			overflow: hidden;
+			transition: all 0.4s ease;
+			cursor: pointer;
+			text-decoration: none;
+			display: block;
+			color: inherit;
+			margin-top: 40px;
+			margin-bottom: 70px;
+		}
+
+		.featured-card-wrap:hover {
+			border-color: #60A5FA;
+			box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), 0 0 25px rgba(59, 130, 246, 0.2);
+			transform: translateY(-4px);
+		}
+
+		.featured-thumb-container {
+			position: relative;
+			overflow: hidden;
+			min-height: 320px;
+			height: 100%;
+		}
+
+		.featured-thumb-container img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform 0.6s ease;
+		}
+
+		.featured-card-wrap:hover .featured-thumb-container img {
+			transform: scale(1.05);
+		}
+
+		.featured-badge {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			background: #2563EB;
+			color: #ffffff;
+			font-family: 'zuume', sans-serif;
+			font-size: 11px;
+			font-weight: 700;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			padding: 5px 14px;
+			border-radius: 20px;
+			z-index: 2;
+		}
+
+		.featured-content {
+			padding: 35px 30px;
+		}
+
+		@media (min-width: 992px) {
+			.featured-content {
+				padding: 50px 45px;
+			}
+		}
+
+		.featured-meta {
+			font-family: paralucent, sans-serif;
+			font-size: 13px;
+			color: #60A5FA;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
+			margin-bottom: 12px;
+		}
+
+		.featured-title {
+			font-family: 'zuume', sans-serif;
+			font-size: 32px;
+			line-height: 1.1;
+			text-transform: uppercase;
+			color: #ffffff;
+			margin-bottom: 18px;
+			transition: color 0.3s ease;
+		}
+
+		@media (min-width: 768px) {
+			.featured-title {
+				font-size: 42px;
+			}
+		}
+
+		.featured-card-wrap:hover .featured-title {
+			color: #60A5FA;
+		}
+
+		.featured-excerpt {
+			font-family: paralucent, sans-serif;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 1.6;
+			color: rgba(255, 255, 255, 0.7);
+			margin-bottom: 25px;
+		}
+
+		/* Insights Grid Cards */
+		.insight-card {
+			background: #0d0d0d;
+			border: 1px solid rgba(255, 255, 255, 0.08);
+			border-radius: 20px;
+			overflow: hidden;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+			cursor: pointer;
+			text-decoration: none;
+			color: inherit;
+		}
+
+		.insight-card:hover {
+			border-color: #60A5FA;
+			transform: translateY(-6px);
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(59, 130, 246, 0.15);
+		}
+
+		.insight-thumb {
+			position: relative;
+			width: 100%;
+			aspect-ratio: 3 / 2;
+			height: auto;
+			overflow: hidden;
+			background-color: #050505;
+		}
+
+		.insight-thumb img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: all 0.5s ease-in-out;
+		}
+
+		.insight-thumb::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background-color: #60A5FA;
+			opacity: 0;
+			z-index: 1;
+			transition: opacity 0.4s ease;
+		}
+
+		.insight-thumb::after {
+			content: "Artikel lesen";
+			position: absolute;
+			z-index: 2;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #000000;
+			color: #ffffff;
+			font-family: 'zuume', sans-serif;
+			font-size: 12px;
+			font-weight: 700;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			padding: 9px 22px;
+			border-radius: 30px;
+			opacity: 0;
+			transition: all 0.3s ease;
+		}
+
+		.insight-card:hover .insight-thumb img {
+			transform: scale(1.03);
+			filter: saturate(0%);
+		}
+
+		.insight-card:hover .insight-thumb::before {
+			opacity: 0.85;
+		}
+
+		.insight-card:hover .insight-thumb::after {
+			opacity: 1;
+		}
+
+		.insight-body {
+			padding: 28px;
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+		}
+
+		.insight-tags {
+			display: flex;
+			gap: 8px;
+			margin-bottom: 12px;
+			flex-wrap: wrap;
+			min-height: 26px;
+		}
+
+		.insight-tag {
+			font-family: 'zuume', sans-serif;
+			font-size: 11px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			color: rgba(255, 255, 255, 0.8);
+			padding: 3px 10px;
+			border-radius: 4px;
+		}
+
+		.insight-card:hover .insight-tag {
+			border-color: #60A5FA;
+			color: #60A5FA;
+		}
+
+		.insight-card-title {
+			font-family: 'zuume', sans-serif;
+			font-size: 24px;
+			line-height: 1.15;
+			text-transform: uppercase;
+			color: #ffffff;
+			margin-bottom: 12px;
+			min-height: 56px;
+			display: flex;
+			align-items: flex-start;
+			transition: color 0.3s ease;
+		}
+
+		.insight-card:hover .insight-card-title {
+			color: #60A5FA;
+		}
+
+		.insight-card-desc {
+			font-family: paralucent, sans-serif;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 1.55;
+			color: rgba(255, 255, 255, 0.68);
+			margin-bottom: 20px;
+			flex-grow: 1;
+			min-height: 70px;
+		}
+
+		.insight-footer-meta {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-top: 1px solid rgba(255, 255, 255, 0.08);
+			padding-top: 14px;
+			font-family: paralucent, sans-serif;
+			font-size: 12px;
+			color: rgba(255, 255, 255, 0.45);
+		}
+
+		.insight-footer-meta .reading-time {
+			color: #60A5FA;
+			font-weight: 600;
+		}
+
+		/* Modal Reader */
+		.modal-content {
+			background-color: #0d0d0d;
+			color: #ffffff;
+			border: 1px solid #333333;
+			border-radius: 20px;
+			padding: 15px;
+		}
+
+		.modal-header {
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			padding-bottom: 20px;
+		}
+
+		.modal-footer {
+			border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+			padding: 16px 20px !important;
+			display: flex !important;
+			gap: 12px !important;
+		}
+
+		@media (max-width: 767.98px) {
+			.modal-footer {
+				flex-direction: column !important;
+				align-items: stretch !important;
+				padding: 14px 12px !important;
+				gap: 10px !important;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.modal-footer {
+				flex-direction: row !important;
+				justify-content: space-between !important;
+				align-items: center !important;
+			}
+		}
+
+		.modal-btn-linkedin {
+			display: inline-flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+			gap: 8px !important;
+			min-height: 48px !important;
+			padding: 10px 22px !important;
+			background-color: #2563EB !important;
+			color: #FFFFFF !important;
+			border: 1px solid #3B82F6 !important;
+			border-radius: 999px !important;
+			font-family: 'Space Grotesk', -apple-system, sans-serif !important;
+			font-size: 14px !important;
+			font-weight: 600 !important;
+			text-transform: uppercase !important;
+			letter-spacing: 0.5px !important;
+			text-decoration: none !important;
+			text-align: center !important;
+			line-height: 1.3 !important;
+			transition: all 0.25s ease !important;
+			box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35) !important;
+			cursor: pointer !important;
+		}
+
+		.modal-btn-linkedin:hover {
+			background-color: #1D4ED8 !important;
+			border-color: #60A5FA !important;
+			color: #FFFFFF !important;
+			transform: translateY(-1px) !important;
+			box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45) !important;
+		}
+
+		.modal-btn-linkedin svg {
+			flex-shrink: 0 !important;
+		}
+
+		.modal-btn-close {
+			display: inline-flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+			min-height: 44px !important;
+			padding: 0 24px !important;
+			background: rgba(255, 255, 255, 0.07) !important;
+			color: rgba(255, 255, 255, 0.85) !important;
+			border: 1px solid rgba(255, 255, 255, 0.22) !important;
+			border-radius: 999px !important;
+			font-family: 'Space Grotesk', -apple-system, sans-serif !important;
+			font-size: 13.5px !important;
+			font-weight: 600 !important;
+			text-transform: uppercase !important;
+			letter-spacing: 0.5px !important;
+			cursor: pointer !important;
+			transition: all 0.2s ease !important;
+			outline: none !important;
+			text-decoration: none !important;
+		}
+
+		.modal-btn-close:hover {
+			background: rgba(255, 255, 255, 0.15) !important;
+			color: #FFFFFF !important;
+			border-color: rgba(255, 255, 255, 0.4) !important;
+		}
+
+		.modal-article-title {
+			font-family: 'zuume', sans-serif;
+			font-size: 32px;
+			text-transform: uppercase;
+			color: #60A5FA;
+			margin-top: 10px;
+			line-height: 1.1;
+		}
+
+		.modal-body {
+			font-family: paralucent, sans-serif;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 1.7;
+			color: rgba(255, 255, 255, 0.85);
+			padding: 25px 15px;
+		}
+
+		.modal-body p {
+			margin-bottom: 18px;
+		}
+
+		.modal-body blockquote {
+			border-left: 3px solid #3B82F6;
+			padding-left: 20px;
+			margin: 25px 0;
+			font-style: italic;
+			color: #ffffff;
+			font-size: 18px;
+		}
+
+		.modal-body ul {
+			padding-left: 20px;
+			margin-bottom: 20px;
+		}
+
+		.modal-body li {
+			margin-bottom: 8px;
+		}
+
+		.btn-close-white {
+			filter: invert(1) grayscale(100%) brightness(200%);
+		}
+
+		/* Newsletter / CTA Banner */
+		.insights-cta-wrap {
+			margin-top: 80px;
+			margin-bottom: 90px;
+			background: linear-gradient(135deg, #121212 0%, #080808 100%);
+			border: 1px solid rgba(59, 130, 246, 0.35);
+			border-radius: 24px;
+			padding: 50px 30px;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+		}
+
+		@media (min-width: 768px) {
+			.insights-cta-wrap {
+				padding: 60px 50px;
+			}
+		}
+
+		.insights-cta-wrap::before {
+			content: "";
+			position: absolute;
+			top: -50%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 600px;
+			height: 300px;
+			background: radial-gradient(ellipse, rgba(59, 130, 246, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+			pointer-events: none;
+		}
+
+		.insights-cta-title {
+			font-family: 'zuume', sans-serif;
+			font-size: 38px;
+			text-transform: uppercase;
+			color: #ffffff;
+			margin-bottom: 15px;
+		}
+
+		@media (min-width: 768px) {
+			.insights-cta-title {
+				font-size: 48px;
+			}
+		}
+
+		.insights-cta-subtitle {
+			font-family: paralucent, sans-serif;
+			font-weight: 300;
+			font-size: 17px;
+			color: rgba(255, 255, 255, 0.7);
+			max-width: 600px;
+			margin: 0 auto 30px auto;
+		}
+
+		.btn-cta-group {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 15px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Mobile Navigation Trigger -->
+	<div id="menu-trigger" class="hamburger hamburger--collapse">
+		<div class="hamburger-box">
+			<div class="hamburger-inner"></div>
+		</div>
+	</div>
+
+	<!-- Header Logo -->
+	<div class="fw header">
+		<a href="/"><img src="images/sb-logotype-wo.svg" class="logo" alt="Alexander Jankowski"></a>
+	</div>
+
+	<!-- Fullscreen Menu Wrap -->
+	<div class="menu-wrap">
+		<ul class="menu">
+			<li><a href="/">Startseite</a></li>
+			<li><a href="/#about">Über mich</a></li>
+			<li><a href="/#timeline">Mein Weg</a></li>
+			<li><a href="/#work">Vertrieb</a></li>
+			<li class="active"><a href="insights.html">Insights</a></li>
+			<li><a href="/#contact">Kontakt</a></li>
+		</ul>
+	</div>
+
+	<!-- Insights Hero Section -->
+	<section class="insights-hero text-center">
+		<div class="container">
+			<div data-aos="fade-up" data-aos-duration="1000">
+				<span class="hero-badge">Wissen &bull; Praxis &bull; Haltung</span>
+				<h1 class="insights-title">GEDANKEN &amp; INSIGHTS</h1>
+				<p class="insights-subtitle">
+					Reale Lektionen aus Polizei, Fitness-Coaching und Vertrieb. Über den Umgang mit Druck, verlässliche Routinen, aktives Zuhören und Vertrauen als echtes Fundament.
+				</p>
+			</div>
+
+						<!-- Category Filters -->
+			<div class="filter-wrap" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+				<button class="filter-pill active" data-filter="all">Alle Artikel (4)</button>
+				<button class="filter-pill" data-filter="polizei">Polizei &amp; Haltung</button>
+				<button class="filter-pill" data-filter="fitness">Fitness-Coaching</button>
+				<button class="filter-pill" data-filter="mindset">Mindset &amp; Disziplin</button>
+				<button class="filter-pill" data-filter="vertrieb">Vertrieb &amp; Vertrauen</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Main Content Area -->
+	<main class="py-5">
+		<div class="container">
+
+												<!-- Featured Spotlight Article -->
+			<div data-aos="fade-up" data-aos-duration="1000">
+				<a href="javascript:void(0)" class="featured-card-wrap" onclick="openInsightModal(1)">
+					<div class="row g-0 align-items-center">
+						<div class="col-lg-6">
+							<div class="featured-thumb-container">
+								<span class="featured-badge">Spotlight Insight</span>
+								<img src="images/news-1.jpg" alt="Was Polizeiarbeit mich über Ruhe unter Druck gelehrt hat">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="featured-content">
+								<div class="featured-meta">
+									<span>Polizei &amp; Haltung</span> &bull; <span>5 Min. Lesezeit</span> &bull; <span>Autor: Alexander Jankowski</span>
+								</div>
+								<h2 class="featured-title">Was Polizeiarbeit mich &uuml;ber Ruhe unter Druck gelehrt hat</h2>
+								<p class="featured-excerpt">
+									Ein Notruf geht ein. Keine Zeit zum Nachdenken, keine zweite Chance. Warum Druck seine Macht verliert, wenn man vorbereitet ist – im Einsatz genauso wie im Beruf.
+								</p>
+								<span class="btn2">Diesen Insight lesen &rarr;</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+
+						<!-- Grid of All Insights (Even 2x2 Balanced Layout) -->
+			<div class="row g-4" id="insights-grid">
+
+				<!-- Article 1: Polizei & Haltung -->
+				<div class="col-12 col-md-6 insight-item" data-category="polizei">
+					<div class="insight-card" onclick="openInsightModal(1)">
+						<div class="insight-thumb">
+							<img src="images/news-1.jpg" alt="Was Polizeiarbeit mich über Ruhe unter Druck gelehrt hat">
+						</div>
+						<div class="insight-body">
+							<div class="insight-tags">
+								<span class="insight-tag">Polizei &amp; Haltung</span>
+							</div>
+							<h3 class="insight-card-title">Was Polizeiarbeit mich &uuml;ber Ruhe unter Druck gelehrt hat</h3>
+							<p class="insight-card-desc">
+								Ein Notruf geht ein. Keine Zeit zum Nachdenken, keine zweite Chance. Warum Druck seine Macht verliert, wenn Abl&auml;ufe sitzen und man vorbereitet ist.
+							</p>
+							<div class="insight-footer-meta">
+								<span>Alexander Jankowski</span>
+								<span class="reading-time">5 Min. Lesezeit</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Article 2: Fitness-Coaching -->
+				<div class="col-12 col-md-6 insight-item" data-category="fitness">
+					<div class="insight-card" onclick="openInsightModal(2)">
+						<div class="insight-thumb">
+							<img src="images/news-5.jpg" alt="Warum Menschenkenntnis im Coaching wichtiger ist als perfekte Theorie">
+						</div>
+						<div class="insight-body">
+							<div class="insight-tags">
+								<span class="insight-tag">Fitness-Coaching</span>
+							</div>
+							<h3 class="insight-card-title">Warum Menschenkenntnis im Coaching wichtiger ist als perfekte Theorie</h3>
+							<p class="insight-card-desc">
+								Wissen allein ver&auml;ndert keine Gewohnheiten. Menschen brauchen Verst&auml;ndnis f&uuml;r ihren Alltag, Motivation und jemanden, der ihnen auf Augenh&ouml;he zuh&ouml;rt.
+							</p>
+							<div class="insight-footer-meta">
+								<span>Alexander Jankowski</span>
+								<span class="reading-time">5 Min. Lesezeit</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Article 3: Mindset & Disziplin -->
+				<div class="col-12 col-md-6 insight-item" data-category="mindset">
+					<div class="insight-card" onclick="openInsightModal(3)">
+						<div class="insight-thumb">
+							<img src="images/news-6.jpg" alt="Warum Handeln oft wichtiger ist als Perfektion">
+						</div>
+						<div class="insight-body">
+							<div class="insight-tags">
+								<span class="insight-tag">Mindset &amp; Disziplin</span>
+							</div>
+							<h3 class="insight-card-title">Warum Handeln oft wichtiger ist als Perfektion</h3>
+							<p class="insight-card-desc">
+								Wer auf den perfekten Moment wartet, wartet meistens f&uuml;r immer. Warum Entwicklung nur durch Handeln, Wiederholung und direktes Feedback entsteht.
+							</p>
+							<div class="insight-footer-meta">
+								<span>Alexander Jankowski</span>
+								<span class="reading-time">4 Min. Lesezeit</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Article 4: Vertrieb & Vertrauen -->
+				<div class="col-12 col-md-6 insight-item" data-category="vertrieb">
+					<div class="insight-card" onclick="openInsightModal(4)">
+						<div class="insight-thumb">
+							<img src="images/news-4.jpg" alt="Wann Vertrauen in Geschäftsbeziehungen entsteht">
+						</div>
+						<div class="insight-body">
+							<div class="insight-tags">
+								<span class="insight-tag">Vertrieb &amp; Vertrauen</span>
+							</div>
+							<h3 class="insight-card-title">Wann Vertrauen in Geschäftsbeziehungen entsteht</h3>
+							<p class="insight-card-desc">
+								Ein Kunde sagt Ja aus Vertrauen, nicht wegen des billigsten Preises. Warum echte Verl&auml;sslichkeit und Ehrlichkeit im Detail den Unterschied machen.
+							</p>
+							<div class="insight-footer-meta">
+								<span>Alexander Jankowski</span>
+								<span class="reading-time">5 Min. Lesezeit</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+						<!-- CTA Banner Section -->
+			<div class="insights-cta-wrap" data-aos="fade-up" data-aos-duration="1000">
+				<h2 class="insights-cta-title">LASSEN SIE UNS VERNETZEN</h2>
+				<p class="insights-cta-subtitle">
+					Mein Weg hat mich durch sehr unterschiedliche Bereiche geführt. Deshalb freue ich mich auf Gespräche mit Menschen aus Vertrieb, Fitness, Polizei und darüber hinaus.
+				</p>
+				<div class="btn-cta-group">
+					<a href="https://www.linkedin.com/in/alexander-jankowski-03491242a/" target="_blank" rel="noopener noreferrer" class="btn2">
+						Auf LinkedIn vernetzen &rarr;
+					</a>
+					<a href="/#contact" class="btn2">
+						Direkte Nachricht senden
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer Social Links -->
+	<div class="fw footer-social" data-aos="fade" data-aos-duration="1000">
+		<ul class="footer-social-grid">
+			<li class="social-item">
+				<a href="https://www.linkedin.com/in/alexander-jankowski-03491242a/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+					<div class="social-link-content">
+						<svg class="social-icon" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+						<span class="social-title">LINKEDIN</span>
+						<span class="social-subtitle">Alexander Jankowski</span>
+					</div>
+				</a>
+			</li>
+						<li class="social-item">
+				<a href="https://calendly.com/aj-alexanderjankowski/get2know" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Schedule a Call">
+					<div class="social-link-content">
+						<svg class="social-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+						<span class="social-title">SCHEDULE A CALL</span>
+						<span class="social-subtitle">Calendly &bull; 1:1 Kennenlernen</span>
+					</div>
+				</a>
+			</li>
+			<li class="social-item">
+				<a href="/#contact" class="social-link" aria-label="Standort">
+					<div class="social-link-content">
+						<svg class="social-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+						<span class="social-title">STANDORT</span>
+						<span class="social-subtitle">Berlin, Deutschland</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Site Footer -->
+	<footer class="fw site-footer">
+		<div class="container-fluid px-4 px-md-5">
+			<div class="row align-items-center gy-3">
+				<div class="col-12 col-md-7 text-center text-md-start">
+					<div class="footer-brand-title">ALEXANDER JANKOWSKI</div>
+					<div class="footer-meta-info">
+						<span>&copy; 2026 Alexander Jankowski</span>
+						<span class="footer-dot">&bull;</span>
+						<span>Berlin, Deutschland</span>
+						<span class="footer-dot d-none d-sm-inline">&bull;</span>
+						<span class="d-block d-sm-inline mt-1 mt-sm-0 text-white-50">Vertrieb &bull; Account Management &bull; Neukundengewinnung</span>
+					</div>
+				</div>
+				<div class="col-12 col-md-5 text-center text-md-end">
+					<p class="footer-motto mb-2">„Unterschiedliche Stationen. Eine Konstante: Menschen.“</p>
+					<div class="footer-quicklinks">
+						<a href="/">Startseite</a>
+						<a href="/#about">Über mich</a>
+						<a href="/#timeline">Mein Weg</a>
+						<a href="/#work">Vertrieb</a>
+						<a href="insights.html" class="text-white fw-bold">Insights</a>
+						<a href="/#contact">Kontakt</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Interactive Article Reader Modal -->
+	<div class="modal fade" id="articleModal" tabindex="-1" aria-labelledby="articleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div>
+						<span id="modal-category" class="hero-badge py-1 px-3 mb-2" style="font-size: 11px;">KATEGORIE</span>
+						<h3 class="modal-article-title" id="modal-title">Artikeltitel</h3>
+						<div class="text-white-50" style="font-size: 13px;" id="modal-meta">Datum &bull; Lesezeit</div>
+					</div>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Schließen"></button>
+				</div>
+				<div class="modal-body" id="modal-content-body">
+					<!-- Injected via JavaScript -->
+				</div>
+				<div class="modal-footer">
+					<a href="https://www.linkedin.com/in/alexander-jankowski-03491242a/" target="_blank" rel="noopener noreferrer" class="modal-btn-linkedin">
+						<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: -2px;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+						<span>Diesen Beitrag auf LinkedIn diskutieren</span>
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -1px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+					</a>
+					<button type="button" class="modal-btn-close" data-bs-dismiss="modal">Schließen</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/init.js"></script>
+
+	<script>
+		AOS.init();
+
+		// Filter Functionality
+		$('.filter-pill').click(function() {
+			$('.filter-pill').removeClass('active');
+			$(this).addClass('active');
+
+			var filter = $(this).attr('data-filter');
+
+			if (filter === 'all') {
+				$('.insight-item').fadeIn(300);
+			} else {
+				$('.insight-item').each(function() {
+					var cat = $(this).attr('data-category');
+					if (cat && cat.indexOf(filter) !== -1) {
+						$(this).fadeIn(300);
+					} else {
+						$(this).fadeOut(200);
+					}
+				});
+			}
+		});
+
+				// Article Data for Rich Modal Experience (Directly from Alexander Jankowski)
+		var articlesData = {
+			1: {
+				title: "Was Polizeiarbeit über den Umgang mit Druck lehrt",
+				category: "POLIZEI & DRUCK",
+				meta: "Oktober 2026 &bull; 5 Min. Lesezeit &bull; Autor: Alexander Jankowski",
+				content: `
+					<p>Ein Notruf geht ein. Keine Zeit zum Nachdenken, keine zweite Chance. Und trotzdem wird eine Entscheidung erwartet, und zwar die richtige. Wie schafft man das?</p>
+					
+					<p>Die ehrliche Antwort: nicht mit Talent. Unter Stress spielt unser Körper verrückt. Der Puls rast, der Blick wird eng, klares Denken wird schwer. Genau deshalb verlässt sich die Polizei nicht darauf, dass im Ernstfall schon die richtige Idee kommt. Abläufe werden trainiert, bis sie sitzen. Und sogar ruhiges, bewusstes Atmen gehört zur Ausbildung, weil es den Kopf wieder freimacht.</p>
+					
+					<blockquote>„Druck verschwindet nicht. Aber er verliert seine Macht, wenn man vorbereitet ist.“</blockquote>
+					
+					<p>Was ich daraus mitnehme? Druck verschwindet nicht. Aber er verliert seine Macht, wenn man vorbereitet ist. Wer seine Abläufe kennt und einmal kurz durchatmet, bevor er reagiert, bleibt ruhig, auch wenn es drumherum laut wird. Im Einsatz genauso wie im Job.</p>
+				`
+			},
+			2: {
+				title: "Warum Disziplin wichtiger sein kann als Motivation",
+				category: "FITNESS-COACHING & ROUTINEN",
+				meta: "Oktober 2026 &bull; 5 Min. Lesezeit &bull; Autor: Alexander Jankowski",
+				content: `
+					<p>Motivation ist ein Gefühl, und Gefühle schwanken. An manchen Tagen ist sie groß, an anderen kaum spürbar. Wer seine Ziele nur dann verfolgt, wenn er sich danach fühlt, macht seinen Fortschritt von der Tagesform abhängig. Disziplin setzt genau dort an, wo Motivation endet: Sie sorgt dafür, dass wir handeln, auch wenn die Lust fehlt.</p>
+
+					<p>Disziplin bedeutet dabei nicht Härte gegen sich selbst, sondern das Schaffen verlässlicher Routinen. Kleine, feste Schritte, die unabhängig von der Stimmung umgesetzt werden, summieren sich über Wochen und Monate zu messbaren Ergebnissen. Motivation kann den Anfang erleichtern. Disziplin sorgt dafür, dass man dranbleibt.</p>
+
+					<blockquote>„Disziplin bedeutet nicht Härte gegen sich selbst, sondern das Schaffen verlässlicher Routinen.“</blockquote>
+
+					<p>Ich habe das selbst im Fitnessbereich erlebt, vor allem bei der Ernährung. Am Anfang war die Motivation hoch, doch sie hielt selten länger als ein paar Wochen. Nach einem stressigen Tag fiel die gesunde Mahlzeit schnell weg. Geändert hat sich das erst, als ich feste Routinen eingeführt habe: Mahlzeiten im Voraus planen und vorbereiten, zu ähnlichen Zeiten essen und die Entscheidung nicht jeden Tag neu treffen müssen. Heute muss ich mich dafür gar nicht mehr überwinden. Nicht, weil ich jeden Tag motiviert bin, sondern weil die Routine die Entscheidung für mich übernimmt.</p>
+				`
+			},
+			3: {
+				title: "Wann Menschen wirklich zuhören",
+				category: "KOMMUNIKATION & RELEVANZ",
+				meta: "Oktober 2026 &bull; 4 Min. Lesezeit &bull; Autor: Alexander Jankowski",
+				content: `
+					<p>Kennst du das? Du erzählst etwas, und dein Gegenüber nickt, aber du merkst genau, dass er gedanklich woanders ist. Das liegt nicht unbedingt an Desinteresse. Wir denken einfach schneller, als andere sprechen. Und die freie Zeit nutzt unser Kopf für eigene Gedanken oder dafür, schon mal die Antwort vorzubereiten.</p>
+
+					<p>Was ändert das? Relevanz. Es gibt dazu ein schönes Beispiel aus der Psychologie, den sogenannten Cocktailparty-Effekt: Selbst in einem lauten Raum horchen wir sofort auf, wenn jemand unseren Namen sagt. Und Studien zeigen auch, dass wir uns Dinge viel besser merken, wenn sie etwas mit uns selbst zu tun haben.</p>
+
+					<blockquote>„Menschen hören dann zu, wenn es um sie geht. Zuhören fängt also bei dem an, der spricht.“</blockquote>
+
+					<p>Für mich heißt das: Menschen hören dann zu, wenn es um sie geht. Wenn ich also möchte, dass mir jemand wirklich zuhört, frage ich lieber nach, greife auf, was er gesagt hat, und rede über das, was für ihn wichtig ist. Nicht nur über das, was ich loswerden will. Zuhören fängt also bei dem an, der spricht.</p>
+				`
+			},
+			4: {
+				title: "Wann Vertrauen in Geschäftsbeziehungen entsteht",
+				category: "VERTRIEB & BEZIEHUNGEN",
+				meta: "Oktober 2026 &bull; 5 Min. Lesezeit &bull; Autor: Alexander Jankowski",
+				content: `
+					<p>Ein Kunde sagt Ja. Nicht weil mein Angebot das günstigste war. Sondern weil er mir vertraut hat. Aber wann genau passiert das eigentlich?</p>
+
+					<p>Ganz ehrlich: selten im ersten Gespräch. Vertrauen lässt sich nicht einfordern, man verdient es sich. Und am Ende läuft es für mich auf drei Fragen hinaus, die sich jeder Kunde stellt, bewusst oder unbewusst: Kann der das wirklich? Meint der es gut mit mir? Und hält der, was er sagt?</p>
+
+					<blockquote>„Vertrauen lässt sich nicht einfordern, man verdient es sich.“</blockquote>
+
+					<p>Die Antwort darauf geben keine großen Versprechen, sondern Kleinigkeiten. Zurückrufen, wenn ich es gesagt habe. Ehrlich sein, auch wenn ich dann mal nichts verkaufe und mich wirklich für die Situation des anderen interessieren. Genau daran merken Menschen, ob sie sich auf jemanden verlassen können.</p>
+				`
+			}
+		};
+
+		function openInsightModal(id) {
+			var data = articlesData[id];
+			if (!data) return;
+
+			$('#modal-category').text(data.category);
+			$('#modal-title').text(data.title);
+			$('#modal-meta').html(data.meta);
+			$('#modal-content-body').html(data.content);
+
+			var modal = new bootstrap.Modal(document.getElementById('articleModal'));
+			modal.show();
+		}
+
+		// Check for URL hash (e.g. #article-1)
+		$(document).ready(function() {
+			var hash = window.location.hash;
+			if (hash && hash.startsWith('#article-')) {
+				var id = parseInt(hash.replace('#article-', ''));
+				if (id && articlesData[id]) {
+					setTimeout(function() {
+						openInsightModal(id);
+					}, 500);
+				}
+			}
+		});
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "alexander-jankowski",
+  "version": "1.0.0",
+  "description": "Alexander Jankowski Official Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static build ready'"
+  },
+  "keywords": [],
+  "author": "Alexander Jankowski",
+  "license": "ISC"
+}

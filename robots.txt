@@ -1,0 +1,37 @@
+# robots.txt for Alexander Jankowski (https://alexanderjankowski.com/)
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://alexanderjankowski.com/sitemap.xml
+
+# Allow important sections and resources
+Allow: /
+Allow: /index.html
+Allow: /insights.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /videos/
+Allow: /#about
+Allow: /#timeline
+Allow: /#work
+Allow: /#ideas
+Allow: /#contact
+Allow: /#connect
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Major search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /

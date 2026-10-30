@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="de" data-bs-theme="auto">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seite nicht gefunden | Alexander Jankowski</title>
+	<meta name="robots" content="noindex, follow">
+	<link rel="stylesheet" href="https://use.typekit.net/erm4jbe.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/theme-navy.css" rel="stylesheet">
+	
+	<!-- Favicon -->
+	<link rel="icon" href="favicon.ico" sizes="any">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+	<style>
+		body {
+			background-color: #070E1A;
+			color: #FFFFFF;
+			font-family: sans-serif;
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 20px;
+		}
+		.err-box {
+			max-width: 620px;
+			background: linear-gradient(135deg, rgba(20, 40, 72, 0.7) 0%, rgba(7, 14, 26, 0.9) 100%);
+			border: 1px solid rgba(59, 130, 246, 0.3);
+			border-radius: 20px;
+			padding: 48px 32px;
+			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+		}
+		.err-code {
+			font-size: 72px;
+			font-weight: 800;
+			color: #60A5FA;
+			letter-spacing: -2px;
+			margin-bottom: 8px;
+		}
+		.err-title {
+			font-size: 26px;
+			font-weight: 700;
+			margin-bottom: 16px;
+			color: #FFFFFF;
+		}
+		.err-desc {
+			font-size: 16px;
+			color: #94A3B8;
+			line-height: 1.6;
+			margin-bottom: 32px;
+		}
+		.btn-home {
+			display: inline-block;
+			background: #3B82F6;
+			color: #FFFFFF;
+			font-weight: 600;
+			padding: 14px 28px;
+			border-radius: 50px;
+			text-decoration: none;
+			transition: all 0.25s ease;
+		}
+		.btn-home:hover {
+			background: #60A5FA;
+			color: #070E1A;
+			transform: translateY(-2px);
+		}
+		.quick-links {
+			margin-top: 28px;
+			display: flex;
+			gap: 16px;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.quick-links a {
+			color: #60A5FA;
+			text-decoration: none;
+			font-size: 14px;
+		}
+		.quick-links a:hover {
+			text-decoration: underline;
+		}
+	</style>
+
+	<script>
+		// Smart client-side path redirect for common AI hallucinated routes
+		(function() {
+			var path = window.location.pathname.toLowerCase().replace(/^\/+|\/+$/g, '');
+			var routes = {
+				'about': '/#about',
+				'about-me': '/#about',
+				'ueber-mich': '/#about',
+				'uber-mich': '/#about',
+				'bio': '/#about',
+				'work': '/#work',
+				'vertrieb': '/#work',
+				'services': '/#work',
+				'timeline': '/#timeline',
+				'karriere': '/#timeline',
+				'werdegang': '/#timeline',
+				'contact': '/#connect',
+				'kontakt': '/#connect',
+				'insights': '/insights.html',
+				'blog': '/insights.html',
+				'news': '/insights.html',
+				'faq': '/#faq'
+			};
+			if (routes[path]) {
+				window.location.replace(routes[path]);
+			}
+		})();
+	</script>
+</head>
+
+<body>
+	<div class="err-box">
+		<div class="err-code">404</div>
+		<h1 class="err-title">Seite nicht gefunden</h1>
+		<p class="err-desc">
+			Die angeforderte Adresse existiert nicht oder wurde verschoben. Nutzen Sie die Übersicht unten, um direkt zu den zentralen Inhalten von Alexander Jankowski zu gelangen.
+		</p>
+		<a href="/" class="btn-home">Zurück zur Startseite</a>
+		
+		<div class="quick-links">
+			<a href="/#about">Über mich</a>
+			<a href="/#work">Vertrieb</a>
+			<a href="/#timeline">Mein Weg</a>
+			<a href="/insights.html">Insights</a>
+			<a href="/#connect">Kontakt</a>
+		</div>
+	</div>
+</body>
+</html>

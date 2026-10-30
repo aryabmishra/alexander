@@ -5,7 +5,7 @@ Allow: /
 # Sitemaps
 Sitemap: https://alexanderjankowski.com/sitemap.xml
 
-# Allow important sections and resources
+# Allow all important content and assets
 Allow: /
 Allow: /index.html
 Allow: /insights.html
@@ -17,20 +17,70 @@ Allow: /#about
 Allow: /#timeline
 Allow: /#work
 Allow: /#ideas
+Allow: /#faq
 Allow: /#contact
 Allow: /#connect
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1
 
-# Major search engine crawlers
+# ==============================================================================
+# AI Search Engines & RAG Live Retrieval Crawlers (AEO / GEO Optimization)
+# ==============================================================================
+
+# OpenAI / ChatGPT / SearchGPT live retrieval & training
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Perplexity AI live search & citations
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic Claude RAG & live web fetch
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI Overviews, Google AI Mode & Gemini
 User-agent: Googlebot
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Microsoft Copilot & Bing AI
 User-agent: Bingbot
 Allow: /
 
+User-agent: msnbot
+Allow: /
+
+# Apple Intelligence
 User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Other leading AI knowledge retrieval engines
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: YouBot
 Allow: /
 
 User-agent: LinkedInBot

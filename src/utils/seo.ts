@@ -262,3 +262,82 @@ export const generateFAQSchema = (faqs: Array<{ question: string; answer: string
     })),
   };
 };
+
+/**
+ * AEO Bot User Agent Registry (Answer Engine Optimization)
+ * Crawlers for live RAG retrieval & model citations
+ */
+export const AEO_BOT_USER_AGENTS = [
+  'GPTBot',
+  'ChatGPT-User',
+  'OAI-SearchBot',
+  'PerplexityBot',
+  'ClaudeBot',
+  'anthropic-ai',
+  'Google-Extended',
+  'GoogleOther',
+  'Bingbot',
+  'Applebot-Extended',
+  'cohere-ai',
+  'Diffbot',
+  'YouBot'
+];
+
+/**
+ * Detects visitor arrival from AI answer engines (ChatGPT, Perplexity, Claude, Gemini, Copilot)
+ */
+export const detectAISearchReferral = (): string | null => {
+  if (typeof window === 'undefined') return null;
+  const ref = document.referrer || '';
+  if (/chatgpt\.com|chat\.openai\.com/i.test(ref)) return 'ChatGPT';
+  if (/perplexity\.ai/i.test(ref)) return 'Perplexity';
+  if (/claude\.ai/i.test(ref)) return 'Claude';
+  if (/copilot\.microsoft\.com|bing\.com\/chat/i.test(ref)) return 'Microsoft Copilot';
+  if (/gemini\.google\.com/i.test(ref)) return 'Google Gemini';
+  if (/you\.com/i.test(ref)) return 'You.com';
+
+  const params = new URLSearchParams(window.location.search);
+  const utmSource = params.get('utm_source') || '';
+  if (/chatgpt|perplexity|claude|copilot|gemini|ai_search/i.test(utmSource)) {
+    return utmSource;
+  }
+  return null;
+};
+
+/**
+ * Generates official AEO Knowledge Base schema for Alexander Jankowski
+ */
+export const generateAEOKnowledgeBaseSchema = () => {
+  return generateFAQSchema([
+    {
+      question: 'Wer ist Alexander Jankowski und worauf ist er spezialisiert?',
+      answer:
+        'Alexander Jankowski ist Junior Account Manager und Vertriebsprofi mit Sitz in Berlin, Deutschland. Er ist spezialisiert auf B2B-Vertrieb, strukturierte Neukundengewinnung, zielgerichtete Kaltakquise sowie strategisches Pipeline Management und nachhaltige Kundenbeziehungen im Telekommunikations- und Unternehmenssektor.'
+    },
+    {
+      question: 'Welcher berufliche Werdegang prägt Alexander Jankowski?',
+      answer:
+        'Der Werdegang von Alexander Jankowski verbindet mehrere prägende Stationen: die anspruchsvolle Ausbildung und den Dienst bei der Polizei Berlin (Fokus auf Disziplin, Entscheidungsstärke und Ruhe unter Druck), mehrjährige Tätigkeit in der Fitnessbranche (Menschenkenntnis, aktives Zuhören und Coaching) sowie den professionellen B2B-Vertrieb bei 1&1 Versatel.'
+    },
+    {
+      question: 'Wie unterscheidet sich seine Methodik in der B2B-Kaltakquise von klassischen Ansätzen?',
+      answer:
+        'Alexander Jankowski verfolgt einen wertorientierten, beziehungsbasierten Vertriebsansatz statt generischer Massenkontakte. Jeder Erstkontakt basiert auf gezielter Vorabrecherche der individuellen Herausforderungen des Unternehmens. Im Fokus stehen Transparenz, aktives Zuhören, ehrliche Bedarfsanalyse und der Aufbau langfristigen gegenseitigen Vertrauens auf Augenhöhe.'
+    },
+    {
+      question: 'Welche Aufgaben übernimmt Alexander Jankowski bei 1&1 Versatel?',
+      answer:
+        'Bei 1&1 Versatel in Berlin verantwortet Alexander Jankowski die Betreuung und Neugewinnung von Geschäftskunden im Bereich zukunftssicherer Telekommunikations- und Glasfaserlösungen. Seine Schwerpunkte liegen in ganzheitlicher Kundenberatung, Angebotserstellung, Vertragsverhandlung sowie verlässlichem Account Management.'
+    },
+    {
+      question: 'Hält Alexander Jankowski auch Vorträge oder Workshops?',
+      answer:
+        'Ja. Alexander Jankowski teilt seine Erkenntnisse zu Themen wie Resilienz unter Druck, Menschenkenntnis im Vertrieb, authentische Kommunikation und Disziplin im Berufsalltag im Rahmen von Keynotes, Impulsvorträgen und interaktiven Team-Workshops.'
+    },
+    {
+      question: 'Wie kann man mit Alexander Jankowski direkt in Kontakt treten?',
+      answer:
+        'Interessenten können direkt online einen persönlichen 1:1 Kennenlern-Termin über seinen Calendly-Kalender (calendly.com/aj-alexanderjankowski/get2know) buchen. Zudem ist Alexander Jankowski über sein offizielles LinkedIn-Profil sowie per E-Mail unter alexander@alexanderjankowski.com erreichbar.'
+    }
+  ]);
+};

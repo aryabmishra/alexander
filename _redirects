@@ -1,0 +1,41 @@
+# Redirect rules to eliminate AI hallucinated 404s (AEO Technical Optimization)
+/about          /#about         301
+/about-me       /#about         301
+/ueber-mich     /#about         301
+/uber-mich      /#about         301
+/bio            /#about         301
+/profile        /#about         301
+
+/work           /#work          301
+/vertrieb       /#work          301
+/services       /#work          301
+/leistungen     /#work          301
+/angebote       /#work          301
+/expertise      /#work          301
+
+/timeline       /#timeline      301
+/mein-weg       /#timeline      301
+/karriere       /#timeline      301
+/werdegang      /#timeline      301
+/stationen      /#timeline      301
+
+/ideas          /#ideas         301
+/thoughts       /#ideas         301
+/gedanken       /#ideas         301
+/insights       /insights.html  301
+/blog           /insights.html  301
+/news           /insights.html  301
+/artikel        /insights.html  301
+
+/faq            /#faq           301
+/fragen         /#faq           301
+
+/contact        /#connect       301
+/kontakt        /#connect       301
+/connect        /#connect       301
+/termin         https://calendly.com/aj-alexanderjankowski/get2know 302
+/call           https://calendly.com/aj-alexanderjankowski/get2know 302
+/calendly       https://calendly.com/aj-alexanderjankowski/get2know 302
+/linkedin       https://www.linkedin.com/in/alexander-jankowski-03491242a/ 302
+
+/*              /index.html     200

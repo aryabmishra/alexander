@@ -32,6 +32,18 @@ export const DEFAULT_SEO_CONFIG = {
 };
 
 /**
+ * Generates an RFC-compliant mailto URI with pre-filled inquiry template for prospects
+ */
+export const getSpeakingInquiryMailto = (): string => {
+  const recipient = DEFAULT_SEO_CONFIG.contactEmail;
+  const subject = encodeURIComponent('Speaking Engagement Inquiry');
+  const body = encodeURIComponent(
+    "Hi Alexander,\r\n\r\nI'm interested in booking you for a speaking engagement.\r\n\r\nEvent Details:\r\nOrganization: \r\nEvent Date: \r\nLocation: \r\nExpected Audience Size: \r\n\r\nPlease let me know your availability.\r\n\r\nThank you!"
+  );
+  return `mailto:${recipient}?subject=${subject}&body=${body}`;
+};
+
+/**
  * Dynamically updates or creates meta tags, title, Open Graph, and Twitter tags in the DOM.
  */
 export const updatePageSEO = ({

@@ -24,7 +24,7 @@ schedule_card_html = f'''						<div class="contact-card text-center" id="contact
 									<span>Schedule a Call</span>
 									<svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
 								</a>
-								<a href="https://www.linkedin.com/in/alexander-jankowski-03491242a/" target="_blank" rel="noopener noreferrer" class="btn2" style="padding: 0 32px; height: 52px; line-height: 48px; display: inline-flex; align-items: center; gap: 10px; text-decoration: none;">
+								<a href="https://www.linkedin.com/in/alexander-jankowski-320ab6447/" target="_blank" rel="noopener noreferrer" class="btn2" style="padding: 0 32px; height: 52px; line-height: 48px; display: inline-flex; align-items: center; gap: 10px; text-decoration: none;">
 									<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
 									<span>LinkedIn</span>
 								</a>

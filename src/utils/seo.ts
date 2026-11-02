@@ -28,7 +28,7 @@ export const DEFAULT_SEO_CONFIG = {
   defaultImage: 'https://alexanderjankowski.com/images/og-image.jpg',
   contactEmail: 'alexander@alexanderjankowski.com',
   calendlyUrl: 'https://calendly.com/aj-alexanderjankowski/get2know',
-  linkedinUrl: 'https://www.linkedin.com/in/alexander-jankowski-03491242a/',
+  linkedinUrl: 'https://www.linkedin.com/in/alexander-jankowski-320ab6447/',
 };
 
 /**

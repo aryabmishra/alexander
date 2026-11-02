@@ -263,7 +263,7 @@ ins_cta_replacement = """			<!-- CTA Banner Section -->
 					Mein Weg hat mich durch sehr unterschiedliche Bereiche geführt. Deshalb freue ich mich auf Gespräche mit Menschen aus Vertrieb, Fitness, Polizei und darüber hinaus.
 				</p>
 				<div class="btn-cta-group">
-					<a href="https://www.linkedin.com/in/alexander-jankowski-03491242a/" target="_blank" rel="noopener noreferrer" class="btn2">
+					<a href="https://www.linkedin.com/in/alexander-jankowski-320ab6447/" target="_blank" rel="noopener noreferrer" class="btn2">
 						Auf LinkedIn vernetzen &rarr;
 					</a>
 					<a href="/#contact" class="btn2">

@@ -38,4 +38,14 @@
 /calendly       https://calendly.com/aj-alexanderjankowski/get2know 302
 /linkedin       https://www.linkedin.com/in/alexander-jankowski-320ab6447/ 302
 
+# Legal Compliances (DDG, DSGVO, AGB)
+/impressum      /impressum.html 200
+/imprint        /impressum.html 301
+/datenschutz    /datenschutz.html 200
+/privacy        /datenschutz.html 301
+/agb            /agb.html       200
+/terms          /agb.html       301
+/nutzungsbedingungen /agb.html  301
+/conditions     /agb.html       301
+
 /*              /index.html     200
